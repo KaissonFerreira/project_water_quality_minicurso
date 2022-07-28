@@ -11,25 +11,27 @@ MODEL_DIR = os.path.join(PACKAGE_ROOT, 'model')
 FILE_MODEL_RF = os.path.join(MODEL_DIR,'clf_randomforest.joblib')
 FILE_MODEL_LR = os.path.join(MODEL_DIR,'clf_logisticregression.joblib')
 
+IMAGE_DIR = os.path.join(PACKAGE_ROOT,'image')
+FILE_IMAGE_AGUA = os.path.join(IMAGE_DIR, 'Predio_da_potabilidade_da_gua_smiley.png')
 
 
 
 
 st.set_page_config(
-    page_title="APP model", page_icon=":round_pushpin:", initial_sidebar_state="expanded"
+    page_title="APP model", page_icon=":beginner:", initial_sidebar_state="expanded"
                 )
 
 st.title('APP - Modelo de classificação')
 
 
 st.write("""
-# :bar_chart: :water: Predição da qualidade da água
+# :droplet: :chart_with_upwards_trend: Predição da qualidade da água
 
-Projeto de Data Science
+Projeto de Data Science para o minicurso da SEQ
 
 """)
 
-classifier_name = st.sidebar.selectbox("Selecione o classificador:", ("Random Forest","Regressão Logística"))
+classifier_name = st.selectbox("Selecione o classificador:", ("Random Forest","Regressão Logística"))
 
 # Atributos
 ph = st.sidebar.slider("PH",0,14)
