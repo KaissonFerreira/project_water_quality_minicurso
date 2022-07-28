@@ -23,9 +23,9 @@ st.title('APP - Modelo de classificação')
 
 
 st.write("""
-# :bar_chart: Projeto de Data Science
+# :bar_chart: :water: Predição da qualidade da água
 
-Predição da qualidade da água
+Projeto de Data Science
 
 """)
 
