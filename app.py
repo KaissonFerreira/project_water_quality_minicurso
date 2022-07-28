@@ -20,8 +20,8 @@ FILE_IMAGE_AGUA = os.path.join(IMAGE_DIR, 'Predio_da_potabilidade_da_gua_smiley.
 st.set_page_config(
     page_title="APP model", page_icon=":beginner:", initial_sidebar_state="expanded"
                 )
-image = Image.open(FILE_IMAGE_AGUA)
-st.image(image, caption='Estação de tratamento de água')
+
+
 
 st.title('APP - Modelo de classificação')
 
@@ -64,3 +64,6 @@ response = get_clf()
 text_response = st.write("""
 ## A probabilidade da água ser potável é de: **{:.2f}%**
 """.format(response[0][1]*100))
+
+image = Image.open(r'images\tratamento-agua.jpg')
+st.image(image, caption='Estação de tratamento de água')
