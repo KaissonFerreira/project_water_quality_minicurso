@@ -1,4 +1,4 @@
-import imp
+from PIL import Image
 import joblib
 import os
 import pathlib
@@ -20,6 +20,8 @@ FILE_IMAGE_AGUA = os.path.join(IMAGE_DIR, 'Predio_da_potabilidade_da_gua_smiley.
 st.set_page_config(
     page_title="APP model", page_icon=":beginner:", initial_sidebar_state="expanded"
                 )
+image = Image.open(FILE_IMAGE_AGUA)
+st.image(image, caption='Estação de tratamento de água')
 
 st.title('APP - Modelo de classificação')
 
