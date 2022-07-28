@@ -1,7 +1,7 @@
 import joblib
 import os
 import pathlib
-
+import streamlit as st
 
 
 
@@ -13,4 +13,4 @@ FILE_MODEL = os.path.join(MODEL_DIR,'clf_randomforest.joblib')
 
 # Carregando o modelo
 model = joblib.load(FILE_MODEL)
-print(model.classes_)
+
