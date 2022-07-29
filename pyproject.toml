@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "water_quality"
+version = "0.1.0"
+description = ""
+authors = ["KaissonFerreira <kaysson_17@hotmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sklearn = "^0.0"
+pandas = "^1.4.3"
+seaborn = "^0.11.2"
+matplotlib = "^3.5.2"
+streamlit = "^1.11.1"
+missingno = "^0.5.1"
+numpy = "^1.23.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
