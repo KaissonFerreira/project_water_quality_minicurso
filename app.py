@@ -12,7 +12,7 @@ FILE_MODEL_RF = os.path.join(MODEL_DIR,'clf_randomforest.joblib')
 FILE_MODEL_LR = os.path.join(MODEL_DIR,'clf_logisticregression.joblib')
 
 IMAGE_DIR = os.path.join(PACKAGE_ROOT,'image')
-FILE_IMAGE_AGUA = os.path.join(IMAGE_DIR, 'Predio_da_potabilidade_da_gua_smiley.png')
+FILE_IMAGE_AGUA = os.path.join(IMAGE_DIR, 'tratamento-agua.jpg')
 
 
 
@@ -65,5 +65,5 @@ text_response = st.write("""
 ## A probabilidade da água ser potável é de: **{:.2f}%**
 """.format(response[0][1]*100))
 
-image = Image.open(r'images\tratamento-agua.jpg')
+image = Image.open(FILE_IMAGE_AGUA)
 st.image(image, caption='Estação de tratamento de água')
