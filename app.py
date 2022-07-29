@@ -65,5 +65,5 @@ text_response = st.write("""
 ## A probabilidade da água ser potável é de: **{:.2f}%**
 """.format(response[0][1]*100))
 
-image = Image.open(FILE_IMAGE_AGUA)
+image = Image.open('images/tratamento-agua.jpg')
 st.image(image, caption='Estação de tratamento de água')
